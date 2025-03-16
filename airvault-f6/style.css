@@ -1,48 +1,82 @@
 
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
+    background: #ffffff;
     color: #333;
 }
-.container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    text-align: center;
+header {
+    background: #ffffff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 header img {
-    max-width: 180px;
-    margin: 20px auto;
-    display: block;
+    max-height: 50px;
 }
 h1 {
-    font-size: 26px;
+    font-size: 24px;
     color: #006633;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
-h2 {
-    font-size: 20px;
-    color: #008751;
-    margin-bottom: 10px;
+.container {
+    padding: 20px;
+    text-align: center;
 }
 .button {
     display: inline-block;
     padding: 12px 25px;
-    margin: 8px;
-    background-color: #00b14f;
-    color: #ffffff;
+    margin: 10px 5px;
+    background: #006633;
+    color: #fff;
     text-decoration: none;
-    border-radius: 8px;
-    font-size: 16px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    font-size: 18px;
 }
 .button:hover {
-    background-color: #008751;
+    background: #004d26;
 }
-.return-home {
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #006633;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidebar a {
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
     display: block;
-    margin-top: 25px;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+    background-color: #004d26;
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+.menu-icon {
+    font-size: 28px;
+    cursor: pointer;
     color: #006633;
+}
+@media (max-width: 768px) {
+    .button {
+        font-size: 16px;
+        width: 80%;
+    }
 }
