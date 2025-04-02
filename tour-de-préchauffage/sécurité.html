@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Tour de Préchauffage - Sécurité</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+<div id="sidebar" class="sidebar">
+    <button class="closebtn" onclick="toggleSidebar()">×</button>
+    <a href="/index.html">🏠 Accueil</a>
+    <ul>
+        <li><a href="/broyeur-à-cru/index.html">Broyeur à Cru</a></li>
+<li><a href="/concasseur-et-pré-homo/index.html">Concasseur et Pré-homo</a></li>
+<li><a href="/silo-d'homogénéisation/index.html">Silo d'Homogénéisation</a></li>
+<li><a href="/tour-de-préchauffage/index.html">Tour de Préchauffage</a></li>
+<li><a href="/four/index.html">Four</a></li>
+<li><a href="/refroidisseur/index.html">Refroidisseur</a></li>
+<li><a href="/laveur-à-gaz/index.html">Laveur à Gaz</a></li>
+<li><a href="/silo-csr-css/index.html">Silo CSR/CSS</a></li>
+    </ul>
+</div>
+<button class="openbtn" onclick="toggleSidebar()">☰</button>
+<script>
+function toggleSidebar() {
+    document.getElementById("sidebar").classList.toggle("active");
+}
+</script>
+<style>
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #004734;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidebar.active {
+    width: 250px;
+}
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+.sidebar a:hover {
+    background-color: #007A33;
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 36px;
+    margin-left: 50px;
+    background: none;
+    border: none;
+    color: white;
+}
+.openbtn {
+    font-size: 24px;
+    cursor: pointer;
+    background-color: #004734;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 2;
+}
+</style>
+
+    <div class="header">
+        <h1>Tour de Préchauffage</h1>
+        <h2>Sécurité</h2>
+    </div>
+    <div class="container">
+        <a class="zone-button" href="#">Consignation</a>
+        <a class="zone-button" href="#">Consignes spécifiques</a>
+        <a class="zone-button" href="#">Plan de circulation</a>
+        <a class="zone-button" href="#">Espaces confinés</a>
+        <a class="zone-button" href="#">Consignations groupes</a>
+        <a class="zone-button" href="#">Consignations plaquettes</a>
+    </div>
+    <img src="../logo.jpg" alt="Logo" class="logo">
+</body>
+</html>

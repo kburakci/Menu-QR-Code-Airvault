@@ -1,0 +1,45 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+.header, .footer {
+    background-color: #004734;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2rem;
+}
+.zone-button {
+    background-color: #007A33;
+    color: white;
+    border: none;
+    padding: 1.5rem;
+    margin: 1rem;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+.zone-button:hover {
+    background-color: #005C27;
+}
+.logo {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 80px;
+}
+@media (max-width: 600px) {
+    .zone-button {
+        width: 90%;
+    }
+}
